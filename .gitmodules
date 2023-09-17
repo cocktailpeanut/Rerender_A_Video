@@ -3,7 +3,7 @@
 	url = https://github.com/haofeixu/gmflow.git
 [submodule "deps/ControlNet"]
 	path = deps/ControlNet
-	url = https://github.com:lllyasviel/ControlNet.git
+	url = https://github.com/lllyasviel/ControlNet.git
 [submodule "deps/ebsynth"]
 	path = deps/ebsynth
-	url = https://github.com:SingleZombie/ebsynth.git
+	url = https://github.com/SingleZombie/ebsynth.git
