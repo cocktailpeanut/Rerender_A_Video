@@ -164,7 +164,7 @@ def create_cfg(input_path, prompt, image_resolution, control_strength,
     cfg = RerenderConfig()
     cfg.create_from_parameters(
         input_path,
-        os.path.join('result', input_name, 'blend.mp4'),
+        os.path.abspath(os.path.join('result', input_name, 'blend.mp4')),
         prompt,
         a_prompt=a_prompt,
         n_prompt=n_prompt,
