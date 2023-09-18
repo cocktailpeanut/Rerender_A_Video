@@ -607,10 +607,10 @@ def process3(*args):
     end_frame = cfg.frame_count - 1
     interval = cfg.interval
     key_dir = os.path.split(cfg.key_dir)[-1]
-    o_video_cmd = f'--output {o_video}'
+    o_video_cmd = f'--output \"{o_video}\"'
     ps = '-ps' if use_poisson else ''
-    cmd = (f'python video_blend.py {video_base_dir} --beg 1 --end {end_frame} '
-           f'--itv {interval} --key {key_dir}  \"{o_video_cmd}\" --fps {fps} '
+    cmd = (f'python video_blend.py \"{video_base_dir}\" --beg 1 --end {end_frame} '
+           f'--itv {interval} --key {key_dir} {o_video_cmd} --fps {fps} '
            f'--n_proc {max_process} {ps}')
     print(cmd)
     os.system(cmd)

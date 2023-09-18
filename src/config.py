@@ -45,6 +45,7 @@ class RerenderConfig:
         self.work_dir = work_dir
         if work_dir is None:
             self.work_dir = os.path.dirname(output_path)
+
         self.key_dir = os.path.join(self.work_dir, key_subdir)
         self.first_dir = os.path.join(self.work_dir, 'first')
 
